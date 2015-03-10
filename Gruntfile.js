@@ -82,7 +82,7 @@ module.exports = function (grunt) {
         connect: {
             server: {
                 options: {
-                    port: 8888,
+                    port: 7777,
                     base: '.'
                 }
             }
@@ -143,7 +143,7 @@ module.exports = function (grunt) {
         'saucelabs-jasmine': {
             all: {
                 options: {
-                    urls: ['http://localhost:8888/spec/'],
+                    urls: ['http://localhost:7777/spec/'],
                     tunnelTimeout: 5,
                     build: process.env.TRAVIS_JOB_ID,
                     concurrency: 3,
